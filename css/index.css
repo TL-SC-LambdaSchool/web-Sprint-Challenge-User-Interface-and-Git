@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,9 +27,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -46,61 +42,66 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 * {
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+html{
+    font-size:62.5%;
 }
-
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height:1.5;	
+}
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 5%;
     font-family: 'Rubik', sans-serif;
 }
-
-p {
-    line-height: 1.4;
-}
-
 .container {
-    width: 800px;
+    width: 45%;
     margin: 0 auto;
 }
-
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 5%;  
 }
-
+/*Header section styles*/
+header{
+    padding-bottom:4%;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:4% 0;
+}
+nav a{
+    color:#000;
+    text-decoration:none;
+    font-size:1.6rem;
+}
+/*middle content styles*/
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     border-bottom: 1px dashed black;
 }
-
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -111,36 +112,94 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+/***** color boxes ****/
+.middle-content .boxes .box1{
+    background-color:teal;
+}
+.middle-content .boxes .box2{
+    background-color:gold;
+}
+.middle-content .boxes .box3{
+    background-color:cadetblue;
+}
+.middle-content .boxes .box4{
+    background-color: coral;
+}
+.middle-content .boxes .box5{
+    background-color: crimson;
+}
+.middle-content .boxes .box6{
+    background-color:forestgreen;
+}
+.middle-content .boxes .box7{
+    background-color: darkorchid;
+}
+.middle-content .boxes .box8{
+    background-color: hotpink;
+}
+.middle-content .boxes .box9{
+    background-color: indigo;
+}
+.middle-content .boxes .box10{
+    background-color: dodgerblue;
+}
+/*bottom content styles*/
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
 .bottom-content .text-container {
     padding-right: 4%;
 }
-
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
+}
+/*About page styles*/
+/** offers section styles **/
+.about{
+    padding-bottom:4%;
+}
+.offers{
+    border-top:1px dotted black;
+    padding:4% 0;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.offers div{
+    border-bottom: 1px dotted black;
+    width:45%;
+    margin:3% 0;
+    padding:2% 0;
+}
+.offers button{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding:2% 4%;
+    margin:2% 0;
+    transition:2s;
+}
+.offers button:hover{
+    background-color:#000;
+    color:#fff;
+}
+.work{
+    padding-bottom:4%;
 }
